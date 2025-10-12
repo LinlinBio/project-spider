@@ -48,6 +48,12 @@ const prefix = baseUrl.endsWith("/") ? baseUrl : baseUrl + "/";
   <body
     class="flex flex-col gap-4 items-center pt-12 pb-6 w-full [&>*]:px-6 [&>*]:max-w-[60rem] [&>astro-island>*]:px-6 [&>astro-island>*]:max-w-[60rem] text-zinc-900 bg-zinc-50 dark:text-zinc-50 dark:bg-zinc-900"
   >
+
+    <!-- 在这里插入标题，并用 Tailwind class 控制字号和行距 -->
+    <h1 class="text-5xl leading-normal text-center">
+      {title}
+    </h1>
+    
     <slot />
     <footer class="m-auto">
       <p
