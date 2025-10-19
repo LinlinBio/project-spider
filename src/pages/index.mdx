@@ -1,10 +1,11 @@
 ---
 layout: ../layouts/Layout.astro
-title: Ontogenetic Shift in Locomotor Mimicry -- Integrated Anti-Predator Strategy in the Myrmecomorphic Wolf Spider Arctosa kiangsiensis
+title: "Ontogenetic Shift in Locomotor Mimicry -- Integrated Anti-Predator Strategy in the Myrmecomorphic Wolf Spider Arctosa kiangsiensis"
 description: Simple project page template for your research paper, built with Astro and Tailwind CSS
 favicon: favicon.svg
 thumbnail: screenshot-light.png
 ---
+
 
 import Header from "../components/Header.astro";
 import Video from "../components/Video.astro";
@@ -14,7 +15,6 @@ import Figure from "../components/Figure.astro";
 import Image from "../components/Image.astro";
 import LaTeX from "../components/LaTeX.astro";
 
-import outside from "../assets/outside.mp4";
 import Splat from "../components/Splat.tsx"
 import fig1 from "../assets/fig1.png"
 import fig2 from "../assets/fig2.png"
@@ -42,15 +42,13 @@ export const components = {pre: CodeBlock, table: Table}
   conference="Jul 2023 - Present"
   />
 
-<Video source={outside} />
-
 
 <HighlightedSection class="text-justify">
 
 ## Abstract
 
 <section class="text-justify">
-  Many arthropods employ Batesian mimicry, yet empirical evidence for transformational mimicry and locomotor mimicry remains limited. We investigated the wolf spider Arctosa kiangsiensis, which exhibits an ontogenetic shift in locomotor ant mimicry: juveniles resemble the smaller ant Pristomyrmex punctatus, while adults mimic the larger Formica cunicularia. Locomotion analyses showed stage-specific resemblance to co-occurring ants, while spectrophotometry and avian vision modeling confirmed visual similarity to both ants and background. Predation assays with chicks further demonstrated reduced attack rates on A. kiangsiensis compared to non-mimetic controls. Our results reveal that A. kiangsiensis integrates locomotor mimicry, transformational mimicry, and background camouflage, providing stage-matched protection and enhancing survival under avian predation.
+  Many arthropods employ Batesian mimicry, yet empirical evidence for transformational mimicry and locomotor mimicry remains limited. We investigated the wolf spider <i>Arctosa kiangsiensis</i>, which exhibits an ontogenetic shift in locomotor ant mimicry: juveniles resemble the smaller ant <i>Pristomyrmex punctatus</i>, while adults mimic the larger <i>Formica cunicularia</i>. Locomotion analyses showed stage-specific resemblance to co-occurring ants, while spectrophotometry and avian vision modeling confirmed visual similarity to both ants and background. Predation assays with chicks further demonstrated reduced attack rates on <i>A. kiangsiensis</i> compared to non-mimetic controls. Our results reveal that <i>A. kiangsiensis</i> integrates locomotor mimicry, transformational mimicry, and background camouflage, providing stage-matched protection and enhancing survival under avian predation.
 </section>
 
 </HighlightedSection>
@@ -61,18 +59,20 @@ export const components = {pre: CodeBlock, table: Table}
 <section class="text-justify">
   Arthropods adopt diverse protective strategies such as crypsis, camouflage, and Batesian mimicry, where edible species resemble unpalatable models to deter predators. Ants serve as effective models due to their defenses and unpalatability, and many spiders mimic ants to reduce predation. While morphological mimicry in spiders has been widely studied, locomotor mimicry remains less explored. 
   <p class="mt-4">
-    Moreover, although some species exhibit transformational mimicry by shifting models during development (McIver & Stonedahl, 1993; Pekár et al., 2020), this phenomenon has been little studied, particularly in spiders. We hypothesize that such shifts may help maintain size-matched resemblance to worker ants, thereby optimizing survival across ontogeny.
+    Moreover, although some species exhibit transformational mimicry by shifting models during development, this phenomenon has been little studied, particularly in spiders. We hypothesize that such shifts may help maintain size-matched resemblance to worker ants, thereby optimizing survival across ontogeny.
   </p>
   <p class="mt-4">
-    Here, we examine the wolf spider Arctosa kiangsiensis, which displays stage-specific locomotor resemblance to two co-occurring ant species, and test its visual similarity and protective value against avian predators.
+    Here, we examine the wolf spider <i>A. kiangsiensis</i>, which displays stage-specific locomotor resemblance to two co-occurring ant species, and test its visual similarity and protective value against avian predators.
   </p>
 </section>
 
 
+<HighlightedSection class="text-justify">
+
 ## Methods
 
 <section class="text-justify">
-  We collected mimetic spiders (A. kiangsiensis), non-mimetic spiders (P. laura), and two ant species (F. cunicularia and P. punctatus) from Shizishan, Wuhan (2022–2024). Spiders were kept individually and fed flies or crickets, while ants were group-housed and fed sugar water. 
+  We collected mimetic spiders (<i>A. kiangsiensis</i>), non-mimetic spiders (<i>P. laura</i>), and two ant species (<i>F. cunicularia</i> and <i>P. punctatus</i>) from Shizishan, Wuhan (2022–2024). Spiders were kept individually and fed flies or crickets, while ants were group-housed and fed sugar water. 
   <p class="mt-4">
     Locomotion was recorded in a controlled arena under LED light, with trajectories tracked frame by frame from video recordings. Movement parameters (velocity, acceleration, sinuosity, directional change, and auto-correlation) were extracted, smoothed, and compared across species and size groups using PCA and multiple group comparisons with post hoc tests.
   </p>
@@ -84,6 +84,7 @@ export const components = {pre: CodeBlock, table: Table}
   </p>
 </section>
 
+</HighlightedSection>
 
 ## Results
 
@@ -97,8 +98,8 @@ export const components = {pre: CodeBlock, table: Table}
 </section>
 
 <Figure>
-  <Image slot="figure" source={fig2} altText="" />
-  <span slot="caption"></span>
+  <Image slot="figure" source={fig1} altText="A. Movement trajectories of the larger-sized group (first row) and the smaller-sized group (second row). B-C. Results of PCA for trajectory parameters (sinuosity, mean and standard deviation of directional change, mean and standard deviation of speed, mean and standard deviation of acceleration, wavelength, and amplitude) of the larger-sized group (B) and the smaller-sized group (C), respectively. D. The similarity of individual trajectory parameters between spiders and ants. P-values were calculated using Kruskal‒Wallis tests followed by Wilcoxon tests with Bonferroni correction." />
+  <span slot="caption">A. Movement trajectories of the larger-sized group (first row) and the smaller-sized group (second row). B-C. Results of PCA for trajectory parameters (sinuosity, mean and standard deviation of directional change, mean and standard deviation of speed, mean and standard deviation of acceleration, wavelength, and amplitude) of the larger-sized group (B) and the smaller-sized group (C), respectively. D. The similarity of individual trajectory parameters between spiders and ants. P-values were calculated using Kruskal‒Wallis tests followed by Wilcoxon tests with Bonferroni correction.</span>
 </Figure>
 
 ### Spectrophotometry and visual modeling
@@ -110,13 +111,13 @@ export const components = {pre: CodeBlock, table: Table}
 </section>
 
 <Figure>
-  <Image slot="figure" source={fig2} altText="" />
-  <span slot="caption"></span>
+  <Image slot="figure" source={fig2} altText="Mean (± SD) spectral reflectance of the carapace and abdomen of spiders (A), head and abdomen of ants (B), and environmental elements: dead leaf and duckweed (C), stick and soil (D)." />
+  <span slot="caption">Mean (± SD) spectral reflectance of the carapace and abdomen of spiders (A), head and abdomen of ants (B), and environmental elements: dead leaf and duckweed (C), stick and soil (D).</span>
 </Figure>
 
 <Figure>
-  <Image slot="figure" source={fig3} altText="" />
-  <span slot="caption"></span>
+  <Image slot="figure" source={fig3} altText="Chromatic and achromatic contrast of A. kiangsiensis body parts (carapace, abdomen) against that of F. cunicularia body parts (head, abdomen), and of various environmental elements estimated from the visual modeling of the VS-avian (A) and of UVS-avian (B). Medians are represented by the bold lines in the boxes, means are represented by the solid black rhombuses, outliers are represented by the hollow circles, and the threshold of contrast at 1 and 3 are represented by the dashed lines. “A” represents ant head (versus spider carapace) or ant abdomen (versus spider abdomen), “DL” represents dead leaf, “DW” represents duckweed, “SO” represents soil, and “ST” represents stick." />
+  <span slot="caption">Chromatic and achromatic contrast of A. kiangsiensis body parts (carapace, abdomen) against that of F. cunicularia body parts (head, abdomen), and of various environmental elements estimated from the visual modeling of the VS-avian (A) and of UVS-avian (B). Medians are represented by the bold lines in the boxes, means are represented by the solid black rhombuses, outliers are represented by the hollow circles, and the threshold of contrast at 1 and 3 are represented by the dashed lines. “A” represents ant head (versus spider carapace) or ant abdomen (versus spider abdomen), “DL” represents dead leaf, “DW” represents duckweed, “SO” represents soil, and “ST” represents stick.</span>
 </Figure>
 
 ### Chick predation experiment
@@ -126,6 +127,6 @@ export const components = {pre: CodeBlock, table: Table}
 </section>
 
 <Figure>
-  <Image slot="figure" source={fig2} altText="Oocytes were predominantly at the M1 stage after vehicle treatment (92.9%), at the GVBD stage after 2.5 mM CCB02 treatment (92.9%), and at the GV stage after 10 mM CCB02 treatment (81.3%)." />
-  <span slot="caption">Oocytes were predominantly at the M1 stage after vehicle treatment (92.9%), at the GVBD stage after 2.5 mM CCB02 treatment (92.9%), and at the GV stage after 10 mM CCB02 treatment (81.3%).</span>
+  <Image slot="figure" source={fig4} altText="Results of the chick predation experiment. A. Proportion of the mimetic and non-mimetic spiders that were attacked by the chicks. B. Boxplots of hesitation time before pecking the mimetic and non-mimetic spiders." />
+  <span slot="caption">Results of the chick predation experiment. A. Proportion of the mimetic and non-mimetic spiders that were attacked by the chicks. B. Boxplots of hesitation time before pecking the mimetic and non-mimetic spiders.</span>
 </Figure>
