@@ -4,7 +4,10 @@
 
 <figure class="w-full flex flex-col gap-2 items-center">
   <div class="flex justify-center w-full">
-    <slot name="figure" class="w-[40rem] h-auto object-contain" />
+    <!-- 直接在 slot 的父容器里限制宽度 -->
+    <div class="w-[40rem]">
+      <slot name="figure" />
+    </div>
   </div>
   <figcaption class="text-center text-zinc-700 dark:text-zinc-300">
     <slot name="caption" />
