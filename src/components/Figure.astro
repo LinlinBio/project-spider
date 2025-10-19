@@ -3,8 +3,8 @@
 ---
 
 <figure class="w-full flex flex-col gap-2 items-center">
-  <div class="*:max-w-[40rem] *:object-contain flex justify-center w-full">
-    <slot name="figure" />
+  <div class="flex justify-center w-full">
+    <slot name="figure" class="w-[40rem] h-auto object-contain" />
   </div>
   <figcaption class="text-center text-zinc-700 dark:text-zinc-300">
     <slot name="caption" />
