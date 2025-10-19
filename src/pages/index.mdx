@@ -17,9 +17,9 @@ import LaTeX from "../components/LaTeX.astro";
 
 import Splat from "../components/Splat.tsx"
 import fig1 from "../assets/fig1.png"
-import fig1.1 from "../assets/fig1.1.png"
-import fig1.2 from "../assets/fig1.2.png"
-import fig1.3 from "../assets/fig1.3.png"
+import fig1_1 from "../assets/fig1-1.png"
+import fig1_2 from "../assets/fig1-2.png"
+import fig1_3 from "../assets/fig1-3.png"
 import fig2 from "../assets/fig2.png"
 import fig3 from "../assets/fig3.png"
 import fig4 from "../assets/fig4.png"
@@ -110,17 +110,16 @@ export const components = {pre: CodeBlock, table: Table}
   </p>
 </section>
 
-
 <Figure>
-  <Image slot="figure" source={fig1.1} altText="" />
+  <Image slot="figure" source={fig1_1} altText="" />
   <span slot="caption"></span>
 </Figure>
 <Figure>
-  <Image slot="figure" source={fig1.2} altText="" />
+  <Image slot="figure" source={fig1_2} altText="" />
   <span slot="caption"></span>
 </Figure>
 <Figure>
-  <Image slot="figure" source={fig1.3} altText="A. Movement trajectories of the larger-sized group (first row) and the smaller-sized group (second row). B-C. Results of PCA for trajectory parameters (sinuosity, mean and standard deviation of directional change, mean and standard deviation of speed, mean and standard deviation of acceleration, wavelength, and amplitude) of the larger-sized group (B) and the smaller-sized group (C), respectively. D. The similarity of individual trajectory parameters between spiders and ants. P-values were calculated using Kruskal‒Wallis tests followed by Wilcoxon tests with Bonferroni correction." />
+  <Image slot="figure" source={fig1_3} altText="A. Movement trajectories of the larger-sized group (first row) and the smaller-sized group (second row). B-C. Results of PCA for trajectory parameters (sinuosity, mean and standard deviation of directional change, mean and standard deviation of speed, mean and standard deviation of acceleration, wavelength, and amplitude) of the larger-sized group (B) and the smaller-sized group (C), respectively. D. The similarity of individual trajectory parameters between spiders and ants. P-values were calculated using Kruskal‒Wallis tests followed by Wilcoxon tests with Bonferroni correction." />
   <span slot="caption">A. Movement trajectories of the larger-sized group (first row) and the smaller-sized group (second row). B-C. Results of PCA for trajectory parameters (sinuosity, mean and standard deviation of directional change, mean and standard deviation of speed, mean and standard deviation of acceleration, wavelength, and amplitude) of the larger-sized group (B) and the smaller-sized group (C), respectively. D. The similarity of individual trajectory parameters between spiders and ants. P-values were calculated using Kruskal‒Wallis tests followed by Wilcoxon tests with Bonferroni correction.</span>
 </Figure>
 
